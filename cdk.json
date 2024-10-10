@@ -60,6 +60,9 @@
     "@aws-cdk/aws-appsync:useArnForSourceApiAssociationIdentifier": true,
     "@aws-cdk/aws-rds:preventRenderingDeprecatedCredentials": true,
     "@aws-cdk/aws-codepipeline-actions:useNewDefaultBranchForCodeCommitSource": true,
-    "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": true
+    "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": true,
+    "vpcId": "vpc-0b560815ca9c553bb",
+    "emrRoleArn": "arn:aws:iam::xxxxxxxxxxxx:role/EMR_DefaultRole",
+    "instanceProfileArn": "arn:aws:iam::xxxxxxxxxxxx:instance-profile/EMR_EC2_DefaultRole"
   }
 }
