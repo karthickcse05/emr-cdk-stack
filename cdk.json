@@ -63,6 +63,39 @@
     "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": true,
     "vpcId": "vpc-0b560815ca9c553bb",
     "emrRoleArn": "arn:aws:iam::xxxxxxxxxxxx:role/EMR_DefaultRole",
-    "instanceProfileArn": "arn:aws:iam::xxxxxxxxxxxx:instance-profile/EMR_EC2_DefaultRole"
+    "instanceProfileArn": "arn:aws:iam::xxxxxxxxxxxx:instance-profile/EMR_EC2_DefaultRole",
+    "adminUserName": "admin",
+    "adminPassword": "YourPassword123",
+    "numberOfNodes": 2,
+    "nodeType": "ra3.large",
+    "subnets": ["subnet-012ab2c11e040bed5", "subnet-086bdb5d8b60a1226"],
+    "availabilityZone": "us-east-1f",
+    "publicAccessible": true,
+    "databaseName": "mydatabase",
+    "port": 5439,
+    "maintenanceWindow": "Mon:00:00-Mon:03:00",
+    "automatedSnapshotRetentionPeriod": 1,
+    "enhancedVpcRouting": true,
+    "subnetGroupName": "my-subnet-group",
+    "iamRoleArn": "arn:aws:iam::123456789012:role/RedshiftRole",
+    "securityGroupId": "sg-026739fc516e79e98",
+    "parameterGroupName": "test-red",
+    "defaultparameterGroupName":"default.redshift-1.0",
+    "parameterGroupFamily": "redshift-2.0",
+    "parameters": [
+      {
+        "parameterName": "require_ssl",
+        "parameterValue": "true"
+      }
+    ],
+    "kmsKeyId": "arn:aws:kms:us-east-1:12345:key/aea1b892-55ba-4f2e-9f2d-f67058c97666",
+    "manualSnapshotRetentionPeriod": 7,
+    "crossRegionSnapshot":true,
+    "crossRegionSnapshotCopy": {
+      "destinationRegion": "us-east-1",
+      "retentionPeriod": 7
+    },
+    "snsTopicArn": "arn:aws:sns:us-east-1:12345:poc-alarm",
+    "alarmThreshold": 80
   }
 }
